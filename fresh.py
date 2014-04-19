@@ -1,20 +1,25 @@
 #!/usr/bin/python
 
 import sys
-from fb import *
-from bl import *
+import fb.fbapp
+import fb.pages
+import bl
 from storerun import *
 
+
+    
+
+
+def getfbposts():
+    app = fb.fbapp.FBApp()
+    pages = fb.pages.pages
+    for page in pages.iteritems():
+        app.getPosts(*page)
+        
 def main():
-    getattr('fresh', func)
+    
+    func = getattr(sys.modules[__name__], sys.argv[1])
     func()
     
 if __name__=='__main__':
     main()
-
-def getfbposts():
-    app = FBApp()
-    for page in pages.iteritems():
-        app.getPosts(*page)
-    
-
