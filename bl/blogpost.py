@@ -24,10 +24,8 @@ class BlogPoster(object):
         self.subject = "%s Fresh deals at %s " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
         self.postString=""
         self.getposts()
-        f = open("test.txt", 'w')
-        f.write(self.postString)
-        f.close()
-        #emailsender.sendEmail(self.subject, self.postString)
+        
+        emailsender.sendEmail(self.subject, self.postString, "anthony.r.howell.bananas@blogger.com")
         
     def procText(self, op):
         self.postString = self.postString + "%s \n\n" % op
