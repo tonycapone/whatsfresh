@@ -6,4 +6,4 @@ echo $Store
 #PATH=$PATH:/usr/local/bin
 #export PATH
 #scrapy crawl $Store
-/home/tony/whatsfresh/pyscripts/storerun.py $Store
+/home/tony/whatsfresh/storerun.py $Store

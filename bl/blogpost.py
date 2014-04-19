@@ -4,6 +4,8 @@ import emailsender
 import datetime
 
 class BlogPoster(object):
+    filters = set([ u'Margerine', u'Sargento', u'Pillsbury', u'Ham',u'Evans',u'Jimmy',u'Juice',u'Creamer',
+    u'Reddi',u'Kamp\'s',u'Snack',u'Snacks',u'Laundery', u'Franks',u'Hot Dogs', u'Crispy',u'Whip'])
     def __init__(self, store):
         self.storestring = store['name']
         self.store = store
@@ -22,20 +24,25 @@ class BlogPoster(object):
         self.subject = "%s Fresh deals at %s " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
         self.postString=""
         self.getposts()
-               
-        emailsender.sendEmail(self.subject, self.postString)
+        f = open("test.txt", 'w')
+        f.write(self.postString)
+        f.close()
+        #emailsender.sendEmail(self.subject, self.postString)
         
     def procText(self, op):
         self.postString = self.postString + "%s \n\n" % op
+        
         for row in self.items:
-            
-            uname = row[1]
-            uprice = row[2]
-            name = uname.encode('ascii', 'ignore')
-            price = uprice.encode('ascii', 'ignore')
-            
-            
-            self.postString = self.postString + name + '\t' + price + '\n'
+           
+           if not [j for j in set(row[1].split()) if j in self.filters]:
+                print row
+                uname = row[1]
+                uprice = row[2]
+                name = uname.encode('ascii', 'ignore')
+                price = uprice.encode('ascii', 'ignore')
+                
+                
+                self.postString = self.postString + name + '\t' + price + '\n'
         
         
         
