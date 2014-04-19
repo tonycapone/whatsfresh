@@ -24,7 +24,5 @@ class FBApp(object):
             
         log.close()
         
-app = FBApp()
-for page in pages.iteritems():
-    app.getPosts(*page)
+
     
