@@ -22,7 +22,7 @@ class BlogPoster(object):
 
     def uploadpost(self):
         self.subject = "%s Fresh deals at %s " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
-        self.postString=""
+        self.postString=self.store['intro'] + "Ad <a href='%s'>here</a>" % store['adlink']
         self.getposts()
         
         emailsender.sendEmail(self.subject, self.postString, "anthony.r.howell.bananas@blogger.com")
