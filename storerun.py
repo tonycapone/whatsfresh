@@ -5,7 +5,7 @@ from stores import stores
 
 
 
-def storerun():
+def storerun(store):
     print "Store is " + store
     storepost = stores[store]
 
