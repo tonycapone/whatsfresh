@@ -16,13 +16,14 @@ class FBApp(object):
             if post['created_time'] > (datetime.datetime.now() - datetime.timedelta(days=1)):
                 log.append(name + '\n')
                 log.append(post['created_time'].strftime("%m/%d/%Y") + '\n')
+                print post['created_time']
                 try:
                     log.append(post['message'] + '\n')
                 except:
                     log.append("No message\n")
                 log.append("link: " + post['link'] + '\n\n')
-            
-        return log
+            else:
+                return log
         
 
     
