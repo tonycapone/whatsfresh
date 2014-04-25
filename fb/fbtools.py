@@ -17,13 +17,13 @@ class FB(object):
         profile = self.graph.get_object(profileStr)
         feed = self.graph.get_connections(profile['id'], "posts")
         for post in feed['data']:
-            post["link"] = self.parseLink(post["id"])
+            post["link"] = self.parseLink(post["id"],profileStr)
             post["created_time"] = datetime.datetime.strptime(
                 post["created_time"], "%Y-%m-%dT%H:%M:%S+0000") 
             yield post
-    def parseLink(self, post):
+    def parseLink(self, post, profileStr):
         
         postid = post.split('_')
-        link = "https://www.facebook.com/%s/posts/%s" % (postid[0],postid[1])
+        link = "https://www.facebook.com/%s/posts/%s" % (profileStr,postid[1])
         return link
         

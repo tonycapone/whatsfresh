@@ -8,22 +8,20 @@ class FBApp(object):
         self.fb = FB()
     def getPosts(self,name, username):
         log = []
+        todayPosts = []
         posts = self.fb.getPosts(username)
-
+        
         
 
         for post in posts:
             if post['created_time'] > (datetime.datetime.now() - datetime.timedelta(days=1)):
-                log.append(name + '\n')
-                log.append(post['created_time'].strftime("%m/%d/%Y") + '\n')
+                
+                post['created_time'] = post['created_time'].strftime("%m/%d/%Y")
                 print post['created_time']
-                try:
-                    log.append(post['message'] + '\n')
-                except:
-                    log.append("No message\n")
-                log.append("link: " + post['link'] + '\n\n')
+                
+                todayPosts.append(post)
             else:
-                return log
+                return todayPosts
         
 
     
