@@ -12,7 +12,7 @@ class BlogPoster(object):
         
     def getposts(self):
         conn = MySQLdb.connect(user='root', passwd='tidesof', db='stores', host='localhost', charset="utf8", use_unicode=True)
-        cursor = conn.cursor();
+        cursor = conn.cursor(); 
         
         for op in self.store['departments']:
             cursor.execute("""SELECT * from store WHERE store = %s AND department LIKE %s""", (self.storestring, "%"+op+"%",))
@@ -22,7 +22,7 @@ class BlogPoster(object):
 
     def uploadpost(self):
         self.subject = "%s Fresh deals at %s " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
-        self.postString=self.store['intro'] + "Ad <a href='%s'>here</a>" % self.store['adlink']
+        self.postString=self.store['intro'] + " Ad <a href='%s'>here</a>" % self.store['adlink']
         self.getposts()
         
         emailsender.sendEmail(self.subject, self.postString, "anthony.r.howell.bananas@blogger.com")
