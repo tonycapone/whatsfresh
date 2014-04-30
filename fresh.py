@@ -19,7 +19,9 @@ def getfbposts():
         posts.extend(app.getPosts(*page))
     
     conn = MySQLdb.connect(user='root', passwd='tidesof', db='whatsfresh', host='localhost', charset="utf8", use_unicode=True)
-    cursor = conn.cursor()    
+    cursor = conn.cursor()
+    cursor.execute("""DELETE FROM `fbposts` WHERE 1""")
+    conn.commit()
     for post in posts:
         id = post['id'].split('_')[1]
         try:
