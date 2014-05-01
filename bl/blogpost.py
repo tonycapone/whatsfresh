@@ -21,11 +21,15 @@ class BlogPoster(object):
             self.procText(op)
 
     def uploadpost(self):
+        bodString = "body.html"
         self.subject = "%s Fresh deals at %s " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
         self.postString=self.store['intro'] + " Ad <a href='%s'>here</a>" % self.store['adlink']
         self.getposts()
+        bodyf = open(bodString,'w')
+        bodyf.write(self.postString)
+        bodyf.close()
         
-        emailsender.sendEmail(self.subject, self.postString, "anthony.r.howell.bananas@blogger.com")
+        emailsender.sendEmail(self.subject, bodString, "anthony.r.howell.bananas@blogger.com")
         
     def procText(self, op):
         self.postString = self.postString + "%s \n\n" % op
