@@ -22,8 +22,8 @@ class BlogPoster(object):
 
     def uploadpost(self):
         bodString = "body.html"
-        self.subject = "%s Fresh deals at %s " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
-        self.postString=self.store['intro'] + " Ad <a href='%s'>here</a>" % self.store['adlink']
+        self.subject = " %s Fresh deals at %s  " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
+        self.postString="<p>" + self.store['intro'] + " Ad <a href='%s'>here</a> <p>" % self.store['adlink']
         self.getposts()
         bodyf = open(bodString,'w')
         bodyf.write(self.postString)
@@ -31,8 +31,8 @@ class BlogPoster(object):
         
         emailsender.sendEmail(self.subject, bodString, "anthony.r.howell.bananas@blogger.com")
         
-    def procText(self, op):
-        self.postString = self.postString + "%s \n\n" % op
+    def procText(self, department):
+        self.postString = self.postString + "<p><b>%s </b></p>" % department
         
         for row in self.items:
            
@@ -44,7 +44,7 @@ class BlogPoster(object):
                 price = uprice.encode('ascii', 'ignore')
                 
                 
-                self.postString = self.postString + name + '\t' + price + '\n'
+                self.postString = self.postString + "<p>" + name + "     " + price + "</p>"
         
         
         
