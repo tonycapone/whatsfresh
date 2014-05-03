@@ -24,6 +24,12 @@ stores = {'aldi': {
             'departments': [''],
             'adlink': "http://www.wholefoodsmarket.com/sales-flyer?store=85"
             },
+        'traderjoes': {
+            'name': 'Trader Joes',
+            'intro': "This week's deals at Trader Joes",
+            'departments': [''],
+            'adlink': "http://stlouis.findnsave.com/store/Trader-Joes/10272/"
+        }
         'savealot': {
             'name': 'Save A Lot',
             'intro': 'From this week\'s Save A Lot ad.',
