@@ -2,6 +2,7 @@
 import MySQLdb
 import emailsender
 import datetime
+from collections import defaultdict
 
 class BlogPoster(object):
     filters = set([ u'Margerine', u'Sargento', u'Pillsbury', u'Ham',u'Evans',u'Jimmy',u'Juice',u'Creamer',
@@ -32,8 +33,22 @@ class BlogPoster(object):
         emailsender.sendEmail(self.subject, bodString, "anthony.r.howell.bananas@blogger.com")
         
     def procText(self, department):
-        self.postString = self.postString + "<p><b>%s </b></p>" % department
         
+
+        #Process Categories
+        categories = set([(item[4]) for item in self.items])
+        items = [(cat, item)for item in self.items for cat in categories if item[4] == cat]
+        
+        itemdict = defaultdict(list) #initialize dictionary
+        
+        #Create a dictionary with category as the key
+        for cat,item in items:
+            itemdict[cat].append(item)
+        
+        for cat in itemdict.iterkeys()
+            self.postString = self.postString + "<p><b>%s </b></p>" % cat
+        
+        #For each category,
         for row in self.items:
            
            if not [j for j in set(row[1].split()) if j in self.filters]:
