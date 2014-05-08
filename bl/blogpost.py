@@ -20,7 +20,7 @@ class BlogPoster(object):
         for op in self.store['departments']:
             cursor.execute("""SELECT * from store WHERE store = %s AND department LIKE %s""", (self.storestring, "%"+op+"%",))
         
-            self.items = [item for item in cursor.fetchall()]
+            [self.items.append(item) for item in cursor.fetchall()]
         self.procText()
 
     def uploadpost(self):
@@ -38,7 +38,7 @@ class BlogPoster(object):
         
 
         #Process Categories
-        import pdb;pdb.set_trace()
+        
         categories = set([(item[4]) for item in self.items])
         items = [(cat, item)for item in self.items for cat in categories if item[4] == cat]
         
