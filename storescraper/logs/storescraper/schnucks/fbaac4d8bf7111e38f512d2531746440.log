@@ -1,0 +1,1005 @@
+2014-04-08 19:03:26-0400 [scrapy] INFO: Scrapy 0.22.0 started (bot: storescraper)
+2014-04-08 19:03:26-0400 [scrapy] INFO: Optional features available: ssl, http11
+2014-04-08 19:03:26-0400 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'storescraper.spiders', 'SPIDER_MODULES': ['storescraper.spiders'], 'FEED_URI': 'items/storescraper/schnucks/fbaac4d8bf7111e38f512d2531746440.jl', 'LOG_FILE': 'logs/storescraper/schnucks/fbaac4d8bf7111e38f512d2531746440.log', 'BOT_NAME': 'storescraper'}
+2014-04-08 19:03:26-0400 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2014-04-08 19:03:26-0400 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2014-04-08 19:03:26-0400 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2014-04-08 19:03:26-0400 [scrapy] INFO: Enabled item pipelines: StorescraperPipeline
+2014-04-08 19:03:26-0400 [schnucks] INFO: Spider opened
+2014-04-08 19:03:26-0400 [schnucks] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2014-04-08 19:03:26-0400 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2014-04-08 19:03:26-0400 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2014-04-08 19:03:26-0400 [schnucks] DEBUG: Crawled (200) <GET http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD> (referer: None)
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Cinco de Mango Salsa'],
+	 'name': [u'Imported Mangoes'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Chicken with Grape Tomatoes & Mushrooms'],
+	 'name': [u'Santa Sweet Grape Tomatoes'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u''],
+	 'name': [u'Dole Angel Hair or Classic Coleslaw'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u''],
+	 'name': [u'Del Monte Fruit Naturals'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u''],
+	 'name': [u'Orchard Valley Healthy Snacks'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Snack Size Potato Chips'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Jolly Time Popcorn'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Keebler or Nabisco Snacks'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u'Delicious Beef Stroganoff'],
+	 'name': [u'Schnucks French Onion Dip or Sour Cream'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Italian Sausage Soup Served with Garlic Cheese Rolls'],
+	 'name': [u'Ember Farms Pork Sausage'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Bob Evans Biscuits or Croissants'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u'Tuna Noodle Casserole'],
+	 'name': [u'StarKist Tuna'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Condiments'],
+	 'desc': [u''],
+	 'name': [u'Kraft Barbecue Sauce'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cooking'],
+	 'desc': [u''],
+	 'name': [u'Durkee or Weber Grilling Spices'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pasta/Sauce'],
+	 'desc': [u'Pasta with Sausage and Olives'],
+	 'name': [u'Barilla Pasta'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u''],
+	 'name': [u'Betty Crocker Specialty Potatoes'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Condiments'],
+	 'desc': [u''],
+	 'name': [u'Marzetti Salad Dressing'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Canned Goods'],
+	 'desc': [u'Pineapple Bread Pudding'],
+	 'name': [u'Schnucks Pineapple or Mandarin Oranges'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Ice Cream/Frozen Dessert'],
+	 'desc': [u''],
+	 'name': [u'Country Maid Ice Cream'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Oven Glazed Chicken Wings'],
+	 'name': [u'Natural Fresh Chicken Wings'],
+	 'price': [u'$1.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'T-Bone Steak with Parmesan-Dusted Mushrooms'],
+	 'name': [u'USDA Select Fresh T-Bone Steaks'],
+	 'price': [u'$6.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Apricot-Glazed Pork Loin Chops'],
+	 'name': [u'Pride of the Farm Fresh Assorted Loin Pork Chops'],
+	 'price': [u'$2.29 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u''],
+	 'name': [u"Van de Kamp's Breaded Fish Sticks or Fillets"],
+	 'price': [u'Buy 1 Get 1 FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'T-Bone Steak with Parmesan-Dusted Mushrooms'],
+	 'name': [u'USDA Choice Certified Angus Beef Fresh T-Bone Steaks'],
+	 'price': [u'Sale $8.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u''],
+	 'name': [u'El Monterey Single Serve Burritos'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u''],
+	 'name': [u'Sandwich Bros. Sandwiches'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u''],
+	 'name': [u'Simply Seafood Fish Fillet Portions'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u''],
+	 'name': [u'Seawatch Breaded Clam Strips'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u"Michelina's Entrees"],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Vegetables'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u'Spicy Chicken and Corn on the Cob'],
+	 'name': [u'PictSweet Vegetables'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u"Cole's Mini Garlic Bread or Toast"],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Banquet Breakfast Sandwiches'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u''],
+	 'name': [u'Kraft Easy Mac'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pasta/Sauce'],
+	 'desc': [u''],
+	 'name': [u"Hunt's Pasta Sauce"],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pasta/Sauce'],
+	 'desc': [u'Chicken Italiano'],
+	 'name': [u"Hunt's Tomatoes or Tomato Sauce"],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Canned Goods'],
+	 'desc': [u''],
+	 'name': [u'Glory Vegetables'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u''],
+	 'name': [u"Uncle Ben's Rice Sides"],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Act II Microwave Popcorn'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u''],
+	 'name': [u"Hunt's Snack Pack"],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Croutons'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u''],
+	 'name': [u'Jif Peanut Butter To Go'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u"Hershey's King Size Candy Bars"],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baby Food/Items'],
+	 'desc': [u''],
+	 'name': [u'Beechnut Fruit, Vegetables or Yogurt On The Go'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Spices & Herbs'],
+	 'desc': [u''],
+	 'name': [u'Durkee Salad Sensations'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Condiments'],
+	 'desc': [u''],
+	 'name': [u'Betty Crocker Bac-Os Bacon Flavor Bits'],
+	 'price': [u'10 for $10 Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Full Throttle or NOS Energy Drinks'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Royce or Refocus Energy Drinks'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Vitamins, Fruit or Smart Water'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Gold Peak or Lipton Pure Leaf Tea'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Mistic, Fuze or SoBe Drinks'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Coca-Cola'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Pepsi'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'7Up or Dr Pepper'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Minute Maid, Pibb, Sprite or Fanta'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Crush, Mug Root Beer or Sierra Mist'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'TastyKake Pecan Swirls'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Bakery Slider Buns'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Kool-Aid Bursts'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Gatorade'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u''],
+	 'name': [u'Dannon Oikos Greek Yogurt'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Old Orchard Lemonade'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u''],
+	 'name': [u'Simply Single Serve Lemonade or Juice'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Snapps Snack Bites'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Ore-Ida Extra Crispy Easy Fries'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u"Larry's Stuffed Potatoes"],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Jose Ole Chimichangas or Burritos'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Ice Cream/Frozen Dessert'],
+	 'desc': [u''],
+	 'name': [u"Snickers, Twix or M&M's Ice Cream Bars or Cones"],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cleaning Supplies'],
+	 'desc': [u''],
+	 'name': [u'Ajax Liquid Dish Soap'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cleaning Supplies'],
+	 'desc': [u''],
+	 'name': [u'Dial Hand Soap'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Health & Beauty'],
+	 'desc': [u''],
+	 'name': [u'Right Guard Antiperspirant'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Health & Beauty'],
+	 'desc': [u''],
+	 'name': [u'Aim or Close-Up Toothpaste'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pet Supplies'],
+	 'desc': [u''],
+	 'name': [u'Canine Carry-Outs Dog Treats'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Paper Goods'],
+	 'desc': [u''],
+	 'name': [u'Sparkle Big Roll Paper Towels'],
+	 'price': [u'10 for $10  Mix & Match  -  Get the 11th FREE'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u'Roasted Salmon with Brown Sugar Glaze'],
+	 'name': [u'Fresh Farm Raised Atlantic Salmon Fillets'],
+	 'price': [u'$9.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u'Cool Shrimp Tacos'],
+	 'name': [u'31-40 Ct. Raw Shrimp'],
+	 'price': [u'$9.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u''],
+	 'name': [u'Large Snow Crab Cluster'],
+	 'price': [u'$8.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seafood'],
+	 'desc': [u'Lemon Parmesan Tilapia'],
+	 'name': [u'The Great Fish Company Tilapia Fillets'],
+	 'price': [u'$10.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Devilish Chicken and Corn on the Cob'],
+	 'name': [u'Florida Grown Incredibly Sweet Corn'],
+	 'price': [u'2 for $1'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Spicy-Sweet Steaks and Onions'],
+	 'name': [u'Sweet Yellow Onions'],
+	 'price': [u'99\xa2 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Vegetable Mixed Grill'],
+	 'name': [u'Red, Ripe Roma Tomatoes'],
+	 'price': [u'99\xa2 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Ham and Cheese Bake with Broccoli'],
+	 'name': [u'Organic Broccoli'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Cauliflower and Wisconsin Aged Cheddar Soup'],
+	 'name': [u'Organic Cauliflower'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Spinach Rice Salad'],
+	 'name': [u'Organic Celery'],
+	 'price': [u'2 for $3'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Bartlett Pear Lattice Coffeecake'],
+	 'name': [u'Bartlett Pears'],
+	 'price': [u'99\xa2 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Strawberry Smoothies'],
+	 'name': [u"Driscoll's Strawberries"],
+	 'price': [u'$5.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Produce'],
+	 'desc': [u'Blackberry Cobbler II'],
+	 'name': [u"Driscoll's Blackberries"],
+	 'price': [u'2 for $6'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Deli'],
+	 'desc': [u''],
+	 'name': [u'Super Food Salad'],
+	 'price': [u'$5.49 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Deli'],
+	 'desc': [u''],
+	 'name': [u'Hawaiian Bread Sandwich'],
+	 'price': [u'$3.79'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Deli'],
+	 'desc': [u''],
+	 'name': [u'Red Potato Salad with Egg'],
+	 'price': [u'$2.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Deli'],
+	 'desc': [u'All-American Cheeseburger Bake'],
+	 'name': [u'Schnucks Select American Cheese'],
+	 'price': [u'$5.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Deli'],
+	 'desc': [u''],
+	 'name': [u"Boar's Head Honey Smoked Turkey Breast"],
+	 'price': [u'$8.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'French Baguette'],
+	 'price': [u'$1.49'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baby Food/Items'],
+	 'desc': [u''],
+	 'name': [u'Bunny White Sandwich Bread'],
+	 'price': [u'$2.09'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Grocery'],
+	 'desc': [u''],
+	 'name': [u"Musselman's Applesauce"],
+	 'price': [u'$1.29'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Deli'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Select Honey Ham'],
+	 'price': [u'$6.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Canned Goods'],
+	 'desc': [u'Tuscan Tuna Salad'],
+	 'name': [u'Schnucks Chunk Light Tuna'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Canned Goods'],
+	 'desc': [u'Chunky Chili Chicken'],
+	 'name': [u'Schnucks Diced Tomatoes with Chiles'],
+	 'price': [u'2 for $1'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Keebler Snack Crackers'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Frito-Lay Party Size Snacks'],
+	 'price': [u'$2.49*  -  Must Buy 2 or $3.49 Each'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Pillsbury Toaster Strudels'],
+	 'price': [u'Buy 3 Get 1 FREE*  -  *Equals $1.50 Each After Instant Savings'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cereal'],
+	 'desc': [u''],
+	 'name': [u'Quaker Cereal or Chewy Granola Bars'],
+	 'price': [u'$1.88'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baking Supplies'],
+	 'desc': [u''],
+	 'name': [u'Aunt Jemima Pancake Mix or Syrup'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baking Supplies'],
+	 'desc': [u''],
+	 'name': [u'Betty Crocker Layer Cake'],
+	 'price': [u'4 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baking Supplies'],
+	 'desc': [u''],
+	 'name': [u'Betty Crocker Frosting'],
+	 'price': [u'Sale 3 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Condiments'],
+	 'desc': [u''],
+	 'name': [u'Vlasic Pickles'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Kool-Aid Drink Packets'],
+	 'price': [u'10 for $1'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Coffee/Tea/Cocoa'],
+	 'desc': [u''],
+	 'name': [u'Maxwell House Coffee'],
+	 'price': [u'$5.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Coffee/Tea/Cocoa'],
+	 'desc': [u''],
+	 'name': [u'Green Mountain K-Cups'],
+	 'price': [u'$6.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u''],
+	 'name': [u'Yoplait Original or Light Yogurt'],
+	 'price': [u'$3.84  or  48\xa2 Each'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u''],
+	 'name': [u'Go-Gurt'],
+	 'price': [u'Sale $3.84'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u"Stouffer's Entrees"],
+	 'price': [u'4 for $10'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Louisa Toasted Ravioli or Stuffed Pasta'],
+	 'price': [u'3 for $10'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Frozen Foods'],
+	 'desc': [u''],
+	 'name': [u'Eggo Pancakes or Waffles'],
+	 'price': [u'2 for $4'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Ice Cream/Frozen Dessert'],
+	 'desc': [u''],
+	 'name': [u"Edy's Ice Cream"],
+	 'price': [u'3 for $10'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Dairy'],
+	 'desc': [u''],
+	 'name': [u'Simply Lemonade or Limeade'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pharmacy'],
+	 'desc': [u''],
+	 'name': [u'TopCare Allergy Tablets'],
+	 'price': [u'2 for $4'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pet Supplies'],
+	 'desc': [u''],
+	 'name': [u'Whiskas Temptations Cat Treats'],
+	 'price': [u'2 for $3'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pet Supplies'],
+	 'desc': [u''],
+	 'name': [u"Kibbles'n Bits Dog Food"],
+	 'price': [u'$9.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Paper Goods'],
+	 'desc': [u''],
+	 'name': [u'Bounty Paper Towels or Charmin Bath Tissue'],
+	 'price': [u'$9.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Paper Goods'],
+	 'desc': [u''],
+	 'name': [u"Puff's Facial Tissues"],
+	 'price': [u'2 for $4'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cleaning Supplies'],
+	 'desc': [u''],
+	 'name': [u'Tide Liquid Laundry Detergent'],
+	 'price': [u'$11.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cleaning Supplies'],
+	 'desc': [u''],
+	 'name': [u'Downy Liquid Fabric Softener'],
+	 'price': [u'$4.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Health & Beauty'],
+	 'desc': [u''],
+	 'name': [u'Crest Toothpaste'],
+	 'price': [u'2 for $3'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Health & Beauty'],
+	 'desc': [u''],
+	 'name': [u'Always Maxi Pads or Pantiliners'],
+	 'price': [u'$2.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Pet Supplies'],
+	 'desc': [u''],
+	 'name': [u'Iams Dog Food'],
+	 'price': [u'$16.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baby Food/Items'],
+	 'desc': [u''],
+	 'name': [u'Pampers Super Box Diapers'],
+	 'price': [u'$24.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Baby Food/Items'],
+	 'desc': [u''],
+	 'name': [u'Pampers Baby Wipes Refill'],
+	 'price': [u'$5.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u''],
+	 'name': [u'Hunter League Leader Beef Hot Dogs'],
+	 'price': [u'2 for $6'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Hamburger or Hot Dog Buns'],
+	 'price': [u'$1.29'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Seasonal'],
+	 'desc': [u''],
+	 'name': [u'St. Louis Cardinals Merchandise'],
+	 'price': [u'25% OFF'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Peanuts'],
+	 'price': [u'2 for $4'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Snacks/Candy'],
+	 'desc': [u''],
+	 'name': [u'Cracker Jacks'],
+	 'price': [u'2 for $3'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Miscellaneous Grocery'],
+	 'desc': [u''],
+	 'name': [u'Plastic Party Cups'],
+	 'price': [u'10 for $10'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'12 Inch Baseball Chocolate Chip Cookie'],
+	 'price': [u'$9.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'Baseball Cupcakes'],
+	 'price': [u'$3.99 or $7.49'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Bakery'],
+	 'desc': [u''],
+	 'name': [u'Fresh Donuts'],
+	 'price': [u'$7.99 Dozen'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Coca-Cola'],
+	 'price': [u'4 for $13  -  Must Buy 4 or $4.99 Each'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Liquor'],
+	 'desc': [u''],
+	 'name': [u'Regular, Light or Select Budweiser'],
+	 'price': [u'$18.98'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Pepsi'],
+	 'price': [u'2 for $5  -  Must Buy 2 or $3 Each'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Liquor'],
+	 'desc': [u''],
+	 'name': [u'Schlafly'],
+	 'price': [u'$6.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Snapple Tea'],
+	 'price': [u'$3.99  -  Must Buy 2 or $4.99 Each'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Liquor'],
+	 'desc': [u''],
+	 'name': [u'Regular or Light Busch'],
+	 'price': [u'$16.98'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Liquor'],
+	 'desc': [u''],
+	 'name': [u'Miller or Coors'],
+	 'price': [u'$11.88'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Liquor'],
+	 'desc': [u''],
+	 'name': [u'Shock Top'],
+	 'price': [u'$11.88'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Liquor'],
+	 'desc': [u''],
+	 'name': [u'Boulevard or Blue Moon'],
+	 'price': [u'$12.88'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'7Up of Dr Pepper'],
+	 'price': [u'3 for $12'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Pepsi'],
+	 'price': [u'3 for $13'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Beverages'],
+	 'desc': [u''],
+	 'name': [u'Schnucks Purified Drinking Water'],
+	 'price': [u'$2.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Grilled Porterhouse Steaks with Garlic-Herb Peppercorn Crust'],
+	 'name': [u'USDA Select Fresh Porterhouse Steaks'],
+	 'price': [u'$7.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Broiled Seasoned Steak'],
+	 'name': [u'USDA Choice Certified Angus Beef Fresh Boneless Porterhouse Steaks'],
+	 'price': [u'Sale $9.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Cooking Supplies'],
+	 'desc': [u''],
+	 'name': [u'Steak Knives'],
+	 'price': [u'$9.99'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Thyme for Blue Burgers'],
+	 'name': [u'Meat Masters Fresh Ground Chuck Patties'],
+	 'price': [u'$4.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Buffalo Chicken Tenders & Blue Cheese Sauce'],
+	 'name': [u'Sanderson Farms Boneless, Skinless Chicken Breasts'],
+	 'price': [u'$3.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Italian-Stuffed Pork Tenderloin'],
+	 'name': [u'Pride of the Farm Fresh Pork Tenderloins'],
+	 'price': [u'$4.99 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Grilled Pork Chops with Basil-Garlic Rub'],
+	 'name': [u'Pride of the Farm Fresh Rib Pork Chops'],
+	 'price': [u'$3.49 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Pork Chops with Sofrito'],
+	 'name': [u'Pride of the Farm Fresh Loin Pork Chops'],
+	 'price': [u'Sale $3.69 lb.'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Rigatoni with Olives and Bacon'],
+	 'name': [u'Farmland Sliced Bacon'],
+	 'price': [u'$4.49'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u''],
+	 'name': [u'Jimmy Dean Breakfast Bowls'],
+	 'price': [u'2 for $5'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Smoked Sausage and Veggies'],
+	 'name': [u'Eckrich Smoked Sausage'],
+	 'price': [u'$2.89'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u''],
+	 'name': [u'Banquet Family Entrees'],
+	 'price': [u'$2.89'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] DEBUG: Scraped from <200 http://schnucks.shoptocook.com/weeklyad.jsp?circularstoreidentifier=WHL1KQNZBR3ML1AKR10JYOVFWKCOFC6YBBJPMD>
+	{'department': [u'Meat & Poultry'],
+	 'desc': [u'Basic Boneless Ham'],
+	 'name': [u'Whole Boneless Kretschmar Hams'],
+	 'price': [u'We Will Match the Lowest Advertised Price'],
+	 'store': 'Schnucks'}
+2014-04-08 19:03:27-0400 [schnucks] INFO: Closing spider (finished)
+2014-04-08 19:03:27-0400 [schnucks] INFO: Stored jsonlines feed (162 items) in: items/storescraper/schnucks/fbaac4d8bf7111e38f512d2531746440.jl
+2014-04-08 19:03:27-0400 [schnucks] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 297,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 126386,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2014, 4, 8, 23, 3, 27, 155080),
+	 'item_scraped_count': 162,
+	 'log_count/DEBUG': 165,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2014, 4, 8, 23, 3, 26, 243219)}
+2014-04-08 19:03:27-0400 [schnucks] INFO: Spider closed (finished)

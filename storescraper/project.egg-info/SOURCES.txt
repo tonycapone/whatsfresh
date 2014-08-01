@@ -1,0 +1,17 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+storescraper/__init__.py
+storescraper/emailer.py
+storescraper/emailsender.py
+storescraper/items.py
+storescraper/notifier.py
+storescraper/pipelines.py
+storescraper/settings.py
+storescraper/spiders/__init__.py
+storescraper/spiders/aldi_spider.py
+storescraper/spiders/schnucks_spider.py
+storescraper/spiders/shopnsave_spider.py

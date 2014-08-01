@@ -1,12 +1,12 @@
 
 import MySQLdb
-import emailsender
+import wpPost
 import datetime
 from collections import defaultdict
 
 class BlogPoster(object):
     filters = set([ u'Margerine', u'Sargento', u'Pillsbury', u'Ham',u'Evans',u'Jimmy',u'Juice',u'Creamer',
-    u'Reddi',u'Kamp\'s',u'Snack',u'Snacks',u'Laundery', u'Franks',u'Hot Dogs', u'Crispy',u'Whip'])
+    u'Reddi',u'Kamp\'s',u'Snack',u'Snacks',u'Laundery', u'Franks',u'Hot Dogs', u'Crispy',u'Whip',u'Pizza'])
     def __init__(self, store):
         self.items = []
         self.storestring = store['name']
@@ -28,11 +28,8 @@ class BlogPoster(object):
         self.subject = " %s Fresh deals at %s  " % (datetime.datetime.now().strftime("%m/%d/%y"), self.storestring)
         self.postString="<p>" + self.store['intro'] + " Ad <a href='%s'>here</a> <p>" % self.store['adlink']
         self.getposts()
-        bodyf = open(bodString,'w')
-        bodyf.write(self.postString)
-        bodyf.close()
         
-        emailsender.sendEmail(self.subject, bodString, "anthony.r.howell.bananas@blogger.com")
+        wpPost.newPost(self.subject, self.postString, ["grocery deals"],[self.storestring] )
         
     def procText(self):
         
@@ -51,7 +48,7 @@ class BlogPoster(object):
         
         for cat in sorted(itemdict.iterkeys()):
             
-            self.postString = self.postString + "<p><b>%s </b></p>" % str(cat)
+            self.postString = self.postString + "<br><p><b>%s </b></p>" % str(cat)
             
             for row in itemdict[cat]:
                 if not [j for j in set(row[1].split()) if j in self.filters]:
@@ -62,7 +59,7 @@ class BlogPoster(object):
                     price = uprice.encode('ascii', 'ignore')
                     
                     
-                    self.postString = self.postString + "<p>" + name + "     " + price + "</p>"
+                    self.postString = self.postString + name + "     " + price + '\n'
         
         
         
