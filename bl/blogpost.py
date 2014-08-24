@@ -18,6 +18,7 @@ class BlogPoster(object):
         
         #Get entries from database
         for op in self.store['departments']:
+            print op
             cursor.execute("""SELECT * from store WHERE store = %s AND department LIKE %s""", (self.storestring, "%"+op+"%",))
         
             [self.items.append(item) for item in cursor.fetchall()]
@@ -36,8 +37,8 @@ class BlogPoster(object):
 
         #Process Categories
         
-        categories = set([(item[4]) for item in self.items])
-        items = [(cat, item)for item in self.items for cat in categories if item[4] == cat]
+        categories = set([(item[5]) for item in self.items])
+        items = [(cat, item)for item in self.items for cat in categories if item[5] == cat]
         
         itemdict = defaultdict(list) #initialize dictionary
         
@@ -45,7 +46,7 @@ class BlogPoster(object):
         for cat,item in items:
             
             itemdict[cat].append(item)
-        
+       
         for cat in sorted(itemdict.iterkeys()):
             
             self.postString = self.postString + "<br><p><b>%s </b></p>" % str(cat)

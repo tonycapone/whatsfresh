@@ -7,7 +7,7 @@ def newPost(title, content, tags, cats):
     post = WordPressPost()
     post.title = title
     post.content = content
-    post.post_status = 'publish'
+    #post.post_status = 'publish'
     post.terms_names = {
     'post_tag': tags,
     'category': cats 
