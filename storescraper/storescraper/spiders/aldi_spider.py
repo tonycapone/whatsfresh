@@ -14,11 +14,6 @@ class AldiSpider(Spider):
     start_urls = []
     
     def start_requests(self):
-        self.conn = MySQLdb.connect(user='root', passwd='tidesof', db='stores', host='localhost', charset="utf8", use_unicode=True)
-        self.cursor = self.conn.cursor()
-        self.cursor.execute("""DELETE from store WHERE store = 'Aldi'""")
-        self.conn.commit()
-        
         
         return [Request(url="http://weeklyads.aldi.us/Aldi/BrowseByListing/ByAllListings/?StoreID=2624123#PageNumber=1",
         callback=self.parseLinks)]
