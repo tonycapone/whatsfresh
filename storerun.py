@@ -10,8 +10,8 @@ def storerun(store):
     storepost = stores[store]
 
 
-    bpost = BlogPoster(storepost)
-    bpost.uploadpost()
+    #//bpost = BlogPoster(storepost)
+    #bpost.uploadpost()
 
 if __name__ == '__main__':
     store = sys.argv[1]

@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import re
 import MySQLdb
 
-class ExampleSpider(Spider):
+class SaveALotSpider(Spider):
     storestring = "Save A Lot" # used for sql searches and storing
     name = "savealot"
     allowed_domains = ["savealot.shoplocal.com"] # Ex: ["wholefoodsmarket.com"]
@@ -16,11 +16,6 @@ class ExampleSpider(Spider):
     baseUrl = "http://savealot.shoplocal.com/" 
     
     def start_requests(self):
-        self.conn = MySQLdb.connect(user='root', passwd='tidesof', db='stores', host='localhost', charset="utf8", use_unicode=True)
-        self.cursor = self.conn.cursor()
-        self.cursor.execute("""DELETE from store WHERE store = %s""", (self.storestring,))
-        self.conn.commit()
-        
         
         return [Request(url=self.startUrl,
         callback=self.parseLinks)]
