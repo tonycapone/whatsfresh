@@ -13,5 +13,6 @@ class StoreItem(Item):
     desc = Field("")
     department = Field("")
     store = Field("")
-    imglink = Field("")
+    imgLink = Field("")
+    picData = Field("")
     pass

@@ -32,7 +32,7 @@ class SchnucksSpider(Spider):
             item['desc'] = site.select('@recipename').extract()[0]
             item['store'] = 'Schnucks'
             item['department'] = site.select('@department').extract()[0]
-            item['imglink'] = site.select('@coords').extract()
-            
+            item['picData'] = site.select('@coords').extract()
+            item['imgLink'] = site.select('../@name').extract()[0]
             items.append(item)
         return items

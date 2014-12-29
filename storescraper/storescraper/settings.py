@@ -14,7 +14,7 @@ SPIDER_MODULES = ['storescraper.spiders']
 NEWSPIDER_MODULE = 'storescraper.spiders'
 
 ITEM_PIPELINES = {
-    #'storescraper.pipelines.SchnucksImgPipeline':10,
+    'storescraper.pipelines.SchnucksImgPipeline':10,
     'storescraper.pipelines.CleanseCategories':15,
     'storescraper.pipelines.DuplicatesPipeline' : 17,
     'storescraper.pipelines.StorescraperPipeline' : 20,
