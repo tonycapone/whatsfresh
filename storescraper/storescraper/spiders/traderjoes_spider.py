@@ -58,7 +58,8 @@ class TraderJoesSpider(Spider):
         storeitem['department'] = department[0]
         storeitem['store'] = self.storestring
         storeitem['imgLink'] = imglink
-        
+        item['picData'] = ""
+
         items.append(storeitem)
         
         

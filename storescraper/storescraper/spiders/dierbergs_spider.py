@@ -41,6 +41,7 @@ class DierbergsSpider(Spider):
            # item['desc'] = site.select('@recipename').extract()
             item['store'] = 'Dierbergs'
             item['imgLink'] = ""
+            item['picData'] = ""
             
             items.append(item)
         return items

@@ -54,6 +54,7 @@ class WholeFoodsSpider(Spider):
             item['store'] = self.storestring
             item['imgLink'] = ""
             item['department'] = ""
+            item['picData'] = ""
             
             items.append(item)
         return items
