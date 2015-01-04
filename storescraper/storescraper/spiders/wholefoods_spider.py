@@ -52,7 +52,7 @@ class WholeFoodsSpider(Spider):
             item['unit'] = ""
             #item['desc'] = row.select('@recipename').extract()
             item['store'] = self.storestring
-            item['imglink'] = ""
+            item['imgLink'] = ""
             item['department'] = ""
             
             items.append(item)

@@ -47,7 +47,7 @@ class SaveALotSpider(Spider):
             storeitem['unit'] = ""
             storeitem['department'] = department
             storeitem['store'] = self.storestring
-            storeitem['imglink'] = imglink
+            storeitem['imgLink'] = imglink
             
             items.append(storeitem)
     

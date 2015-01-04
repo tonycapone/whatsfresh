@@ -51,7 +51,7 @@ class AldiSpider(Spider):
                 storeitem['unit'] = unitText
                 storeitem['department'] = department
                 storeitem['store'] = 'Aldi'
-                storeitem['imglink'] = imglink 
+                storeitem['imgLink'] = imglink
                 
                 items.append(storeitem)
     
