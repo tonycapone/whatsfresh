@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-import sys
-import MySQLdb
-import hashlib
 from scrapy.http import Request
 from scrapy.spider import Spider
-from scrapy.selector import HtmlXPathSelector
 from storescraper.items import StoreItem
 from bs4 import BeautifulSoup
 import re

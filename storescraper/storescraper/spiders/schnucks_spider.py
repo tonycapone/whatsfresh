@@ -5,8 +5,6 @@ from scrapy.http import Request
 from scrapy.spider import Spider
 from scrapy.selector import HtmlXPathSelector
 from storescraper.items import StoreItem
-from bs4 import BeautifulSoup
-import re
 
 import urlparse
 class SchnucksSpider(Spider):

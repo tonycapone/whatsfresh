@@ -2,10 +2,8 @@ from scrapy.http import Request
 from scrapy.spider import Spider
 from scrapy.selector import Selector
 from storescraper.items import StoreItem
-import urlparse
 from bs4 import BeautifulSoup
 import re
-import MySQLdb
 
 class SaveALotSpider(Spider):
     storestring = "Save A Lot" # used for sql searches and storing

@@ -5,7 +5,6 @@ from storescraper.items import StoreItem
 from bs4 import BeautifulSoup
 import urlparse
 import re
-import MySQLdb
 
 class AldiSpider(Spider):
     storestring = "Aldi"

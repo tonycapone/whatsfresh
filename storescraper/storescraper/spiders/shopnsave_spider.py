@@ -1,5 +1,5 @@
 from scrapy.http import Request
-from scrapy.spider import BaseSpider
+from scrapy.spider import Spider
 from scrapy.selector import Selector
 from storescraper.items import StoreItem
 import MySQLdb
@@ -8,7 +8,7 @@ import urlparse
 import re
 
 
-class ShopnsaveSpider(BaseSpider):
+class ShopnsaveSpider(Spider):
     storestring = "ShopNSave"
     name = "shopnsave"
     allowed_domains = ["shopnsave.com"]
