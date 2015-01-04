@@ -42,7 +42,7 @@ class ShopnsaveSpider(Spider):
             storeitem['department'] = department
             storeitem['store'] = self.storestring
             storeitem['imgLink'] = imglink
-            item['picData'] = ""
+            storeitem['picData'] = ""
             items.append(storeitem)
 
         return items
