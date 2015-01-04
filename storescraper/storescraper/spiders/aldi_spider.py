@@ -19,7 +19,7 @@ class AldiSpider(Spider):
         
     def parseItems(self, response, department):
         soup = BeautifulSoup(response.body, "html5lib")
-        
+
         items = []
         itemGridPage = soup.find(class_="gridpage")
         if itemGridPage is None:

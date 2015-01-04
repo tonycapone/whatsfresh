@@ -32,5 +32,5 @@ class SchnucksSpider(Spider):
             item['department'] = site.select('@department').extract()[0]
             item['picData'] = site.select('@coords').extract()
             item['imgLink'] = site.select('../@name').extract()[0]
-            items.append(item)
+	    items.append(item)
         return items
