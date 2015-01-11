@@ -1,7 +1,8 @@
 from scrapy.http import Request
 from scrapy.spider import Spider
 from scrapy.selector import Selector
-from storescraper.items import StoreItem
+
+from ..items import StoreItem
 from bs4 import BeautifulSoup
 import urlparse
 import re
@@ -30,31 +31,29 @@ class AldiSpider(Spider):
             storeitem = StoreItem()
             try:
                 name = item.find(class_="action-goto-listingdetail").get_text().encode('ascii', 'ignore').strip()
-                print(name)
                 price = item.find(class_="deal").get_text().encode('ascii', 'ignore')
-            
+
             except:
                 print("no name or price found")
+
+
+            unit = item.find(class_="priceQualifier")
+            if unit is not None:
+                unitText = unit.get_text().encode('ascii', 'ignore').strip()
             else:
-                print(price)
-                
-                unit = item.find(class_="priceQualifier")
-                if unit is not None:
-                    unitText = unit.get_text().encode('ascii', 'ignore').strip()
-                else:
-                    unitText = ""
-                imglink = item.parent.find('img')['style'].split("//")[1].split(");")[0]
-                
-                storeitem['name'] = name
-                storeitem['price'] = price
-                #storeitem['expiration'] = expiration
-                storeitem['unit'] = unitText
-                storeitem['department'] = department
-                storeitem['store'] = 'Aldi'
-                storeitem['imgLink'] = imglink
-                storeitem['picData'] = ""
-                
-                items.append(storeitem)
+                unitText = ""
+            imglink = item.parent.find('img')['style'].split("//")[1].split(");")[0]
+
+            storeitem['name'] = name
+            storeitem['price'] = price
+            #storeitem['expiration'] = expiration
+            storeitem['unit'] = unitText
+            storeitem['department'] = department
+            storeitem['store'] = 'Aldi'
+            storeitem['imgLink'] = imglink
+            storeitem['picData'] = ""
+
+            items.append(storeitem)
     
         return items
           
@@ -99,8 +98,6 @@ class AldiSpider(Spider):
             
             depUrl = urlparse.urljoin('http://weeklyads.aldi.us', relUrl)
             departments = option.get_text().encode('ascii', 'ignore').strip()
-            print(depUrl)
-            print(departments)
             
             request = Request(url=depUrl)
             request.meta['department'] = departments

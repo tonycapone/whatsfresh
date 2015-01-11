@@ -48,7 +48,8 @@ class ShopnsaveSpider(Spider):
         return items
 
     def parseLinks(self, response):
-        hxs = Selector(response)
+        hxs = Selector(response.body)
+
         options = hxs.xpath("//select[@id='category']/option")
 
         

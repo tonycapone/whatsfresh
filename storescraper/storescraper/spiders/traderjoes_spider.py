@@ -18,7 +18,7 @@ class TraderJoesSpider(Spider):
     startUrl = "http://www.traderjoes.com/FEARLESS-FLYER/" # Ex: "http://www.wholefoodsmarket.com/sales-flyer?store=85"
     baseUrl = "http://www.traderjoes.com/FEARLESS-FLYER/" # Ex: "http://weeklyads.aldi.us"
     ilistxpath = "//div[@class='body']" # the container for item listings. | Ex: //div[@class='article productthumbnail listing-thumbnail'
-    catxpath = "//li[@class='article-title']" # List of links to each item
+    catxpath = "//ul[@class='list']" # List of links to each item
     next = "" # Ex: "//div[@id='topitemnav']//li[@class='next']/a"
     def start_requests(self):
 
