@@ -19,7 +19,7 @@ class DierbergsSpider(Spider):
 
         
         return [Request(url="http://exposhopper.p2ionline.com/Dierbergs/sitebase/index.aspx?area=search&adgroupid=227534",
-        callback=self.getCategories)]
+        callback=self.parseLinks)]
     
     def parse(self, response):
             soup = BeautifulSoup(response.body)
@@ -61,7 +61,7 @@ class DierbergsSpider(Spider):
                 return request
             else:
                 return items
-    def getCategories(self, response):
+    def parseLinks(self, response):
         soup = BeautifulSoup(response.body)
 
         categories = soup.find("select", {"name": "cntrlDeptList$DropDownList1"}).find_all("option")

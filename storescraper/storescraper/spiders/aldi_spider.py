@@ -18,10 +18,10 @@ class AldiSpider(Spider):
         return [Request(url="http://weeklyads.aldi.us/Aldi/BrowseByListing/ByAllListings/?StoreID=2624123#PageNumber=1",
         callback=self.parseLinks)]
         
-    def parseItems(self, response, department):
+    def parse(self, response):
         soup = BeautifulSoup(response.body, "html5lib")
 
-        items = []
+        items = response.meta['items']
         itemGridPage = soup.find(class_="gridpage")
         if itemGridPage is None:
             return items
@@ -46,48 +46,59 @@ class AldiSpider(Spider):
 
             storeitem['name'] = name
             storeitem['price'] = price
-            #storeitem['expiration'] = expiration
             storeitem['unit'] = unitText
-            storeitem['department'] = department
+            storeitem['department'] = response.meta['department']
             storeitem['store'] = 'Aldi'
             storeitem['imgLink'] = imglink
             storeitem['picData'] = ""
 
             items.append(storeitem)
-    
-        return items
-          
-            
-    def parse(self, response):
-        
-        soup = BeautifulSoup(response.body, "html5lib")
-        items = []
-        department = response.meta['department']
-        try:
-			items = response.meta['items']
-        except:
-            print('No items yet')
-			
-        print(response.url)
-        moreItems = self.parseItems(response, department)
-        items.extend(moreItems)
-        
         nextButton = soup.find("a", class_=("skinPaddleRight inactive action-nextpage action-tracking-nav gutterPositionRight"))
         if "javascript:void(0)" in nextButton['href']:
             print "no more items"
             return items
-        
+
         else:
-            
+
             print "more items"
             nextUrl = urlparse.urljoin('http://weeklyads.aldi.us', nextButton['href'])
             print "nexturl:" + nextUrl
-                
-                
+
+
             request = Request(url=nextUrl)
-            request.meta['department'] = department
+            request.meta['department'] = response.meta['department']
             request.meta['items'] = items
             return request
+
+
+          
+            
+    """def parse(self, response):
+
+        soup = BeautifulSoup(response.body, "html5lib")
+        items = []
+
+        try:
+			items = response.meta['items']
+        except:
+            print('No items yet')
+
+        print(response.url)
+        moreItems = self.parseItems(response, department)
+        items.extend(moreItems)
+
+        nextButton = soup.find("a", class_=("skinPaddleRight inactive action-nextpage action-tracking-nav gutterPositionRight"))
+        if "javascript:void(0)" in nextButton['href']:
+            print "no more items"
+            return items
+
+        else:
+
+            print "more items"
+            nextUrl = urlparse.urljoin('http://weeklyads.aldi.us', nextButton['href'])
+            print "nexturl:" + nextUrl
+                """
+
         
     def parseLinks(self, response):
         soup = BeautifulSoup(response.body, "html5lib")
@@ -101,6 +112,7 @@ class AldiSpider(Spider):
             
             request = Request(url=depUrl)
             request.meta['department'] = departments
+            request.meta['items'] = []
             yield request
              
 
