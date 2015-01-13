@@ -7,6 +7,7 @@ from scrapy.spider import Spider
 from scrapy.selector import Selector
 from storescraper.items import StoreItem
 from bs4 import BeautifulSoup
+import re
 import urlparse
 import MySQLdb
 
@@ -29,65 +30,49 @@ class TraderJoesSpider(Spider):
           
             
     def parse(self, response):
-        hxs = Selector(response)
         soup = BeautifulSoup(response.body)
-        body = hxs.xpath(self.ilistxpath)
-        items = []
         department = response.meta['department']
-        name = response.meta['name'] #pull name from sidebar
+        name = soup.find("h1", class_="lead").get_text()
         
-        entries = body.xpath('//strong/text()').extract()
-        #name = entries[0] #pull name from first entry
+        entries = soup.find_all("strong")
+
         print(name)
         for item in entries:
-            
+            item = item.get_text()
             if u'¢' in item or '$' in item:
                 price = item
-                
-            else:
-                price = "no price"
-            print price.encode('ascii', 'ignore')
+
         imglink = "www.traderjoes.com" + soup.find("img", alt=name)["src"]
         storeitem = StoreItem()
             
-        storeitem['name'] = name[0]
+        storeitem['name'] = name
         storeitem['price'] = price
         storeitem['unit'] = ""
-        #storeitem['expiration'] = expiration
-        #storeitem['desc'] = desc
-        storeitem['department'] = department[0]
+        storeitem['department'] = department
         storeitem['store'] = self.storestring
         storeitem['imgLink'] = imglink
         storeitem['picData'] = ""
 
-        items.append(storeitem)
+
+
+
+        return storeitem
         
-        
-        
-        
-        
-        return items
-        
-       
+    def parseCategory(self, response):
+        soup = BeautifulSoup(response.body, "html5lib")
+        links = soup.find_all("a", class_=re.compile("link4.*"))
+        for link in links:
+            request = Request("http://www.traderjoes.com" + link['href'])
+            yield request
         
     def parseLinks(self, response):
-        hxs = Selector(response)
-        options = hxs.xpath(self.catxpath)
-        
+        soup = BeautifulSoup(response.body, "html5lib")
+        options = soup.find(text="Product categories").parent.parent.find_all("li")
         
         for option in options:
-            itemname = option.xpath("a/text()").extract()
-            relUrl = option.xpath("a/@href").extract()
-            relUrl = str(relUrl[0])
-            
-            
-            itemUrl = self.baseUrl + relUrl
-            department = option.xpath("../../div[@class='category-header']/h3/text()").extract()
-            
-                      
-            request = Request(url=itemUrl)
-            request.meta['department'] = department
-            request.meta['name'] = itemname
+            url = "http://www.traderjoes.com/" + option.a['href']
+            request = Request(url=url,callback=self.parseCategory)
+            request.meta['department'] = option.get_text()
             yield request
              
 

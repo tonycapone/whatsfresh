@@ -48,18 +48,21 @@ class ShopnsaveSpider(Spider):
         return items
 
     def parseLinks(self, response):
-        hxs = Selector(response.body)
+        soup = BeautifulSoup(response.body, "html5lib")
 
-        options = hxs.xpath("//select[@id='category']/option")
+        options = soup.find("select", id="category").find_all("option")
+        #options = hxs.xpath("//select[@id='category']/option")
 
         
-        for option in options:
-            departments = option.xpath("text()").extract()[0]
+        for option in options[1:]:
+            departments = option.get_text()
+            #departments = option.xpath("text()").extract()[0]
             
             print(departments)
-            
-            depID = option.xpath("@value").extract()
-            depID = str(depID[0])
+
+            depID = option["value"]
+            #depID = option.xpath("@value").extract()
+            #depID = str(depID[0])
             
             depUrl = "http://shopnsave.com/savings/view-ads/search-circular.html?category=%s&displayCount=500" % depID
 

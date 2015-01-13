@@ -18,19 +18,18 @@ class SaveALotSpider(Spider):
         return [Request(url=self.startUrl,
         callback=self.parseLinks)]
         
-    def parseItems(self, response, department):
+    def parse(self, response):
         soup = BeautifulSoup(response.body, "html5lib")
-        
+        department = response.meta['department']
+        items = response.meta['items']
         itemlist =  soup.find_all(class_='gridTileContain')
-        items = []
-        #import pdb; pdb.set_trace()
+
+
         for item in itemlist:
             storeitem = StoreItem()
             name = item.find('div', class_='gridTileUnitB').a.span.get_text().encode('ascii', 'ignore')
-            print(name)
             
             price = item.find('div', class_='deal action-elide').find(class_='ellipsis_text').get_text().encode('ascii', 'ignore')
-            print(price)
             
             try:
                 imglink = item.find(class_='image cursorPointer')['style'].encode('ascii', 'ignore')
@@ -42,8 +41,6 @@ class SaveALotSpider(Spider):
             
             storeitem['name'] = name
             storeitem['price'] = price
-            #storeitem['expiration'] = expiration
-            #storeitem['desc'] = desc
             storeitem['unit'] = ""
             storeitem['department'] = department
             storeitem['store'] = self.storestring
@@ -51,43 +48,23 @@ class SaveALotSpider(Spider):
             storeitem['picData'] = ""
             
             items.append(storeitem)
-    
-        return items
-          
-            
-    def parse(self, response):
-        
-        soup = BeautifulSoup(response.body, "html5lib")
-        items = []
-        department = response.meta['department']
-        depId = response.meta['depId']
-        depIndex = response.meta['depIndex']
-        
-        # get already scraped items
-        try:
-			items = response.meta['items']
-        except:
-            print('No items yet')
-        
-        # if response contains more data, parse the items
+         # if response contains more data, parse the items
         if "There is no content for this page." not in response.body:
-            moreItems = self.parseItems(response, department)
-            items.extend(moreItems)
+            depId = response.meta['depId']
+            depIndex = response.meta['depIndex']
             depIndex = depIndex + 1
             # Then generate next url and request
             nextUrl = "http://savealot.shoplocal.com/SaveALot/BrowseByListing/ByCategory/?IsPartial=Y&ListingSort=23&StoreID=2655389&CategoryID=%s&PageNumber=%d"% (depId, depIndex)
             print "nextUrl: " + nextUrl
-            
+
             request = Request(url=nextUrl)
             request.meta['depId'] = depId
             request.meta['depIndex'] = depIndex
             request.meta['department'] = department
             request.meta['items'] = items
             return request
-        # else we've scraped all items for this department, so return scraped items
-        else:
-            return items
-        
+        return items
+
     def parseLinks(self, response):
         soup = BeautifulSoup(response.body, "html5lib")
         
@@ -106,6 +83,7 @@ class SaveALotSpider(Spider):
             request.meta['department'] = department
             request.meta['depId'] = depId
             request.meta['depIndex'] = 1
+            request.meta['items'] = []
             yield request
              
 
