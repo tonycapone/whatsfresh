@@ -5,6 +5,7 @@ from scrapy.http import Request
 from scrapy.spider import Spider
 from scrapy.selector import HtmlXPathSelector
 from storescraper.items import StoreItem
+from bs4 import BeautifulSoup
 
 import urlparse
 class WholeFoodsSpider(Spider):
@@ -21,8 +22,8 @@ class WholeFoodsSpider(Spider):
     
     def parse(self, response):
         
-        hxs = HtmlXPathSelector(response)
-        rows = hxs.xpath("//div[contains(@class, 'brand-name')]/div/../..")
+        soup = BeautifulSoup(response.body, "html5lib")
+        rows = soup.find_all("div", class_="views-row views-row-odd")
         
         items = []
         
@@ -30,27 +31,19 @@ class WholeFoodsSpider(Spider):
             
             item = StoreItem()
             name1 = name2 = name = ""
-            name1 = row.xpath("div[1]/div[1]/text()").extract()
-            name2 = row.xpath("div[2]/div[1]/text()").extract()
-            name = str(name1[0]) + " " + str(name2[0])
+            name1 = row.find("div", class_="views-field views-field-field-flyer-brand-name").get_text()
+            name2 = row.find("div", class_="views-field views-field-field-flyer-product-name").get_text()
+            name = name1 + " " + name2
             print name
+            priceDiv = row.find("div", class_="sale_line")
+            if priceDiv.find("span", class_="my_price") is not None:
+                price = priceDiv.find("span", class_="my_price").get_text()
+                unit = priceDiv.find("span", class_="sub_price").get_text()
+            else:
+                price = priceDiv.get_text()
             item['name'] = name
-            
-            price1 = price2 = price = ""
-            try:
-                
-                price1 = row.xpath("div[5]//div[contains(@class, 'sale_line')]/span[1]/text()").extract()
-                price2 = row.xpath("div[5]//div[contains(@class, 'sale_line')]/span[2]/text()").extract()
-                price = str(price1[0]) + " " + str(price2[0])
-                print price
-            except:
-                price1 = row.xpath("div[5]//div[contains(@class, 'sale_line')]/text()").extract()
-                price = str(price1[0])
-                print price
-                
             item['price'] = price
-            item['unit'] = ""
-            #item['desc'] = row.select('@recipename').extract()
+            item['unit'] = unit
             item['store'] = self.storestring
             item['imgLink'] = ""
             item['department'] = ""

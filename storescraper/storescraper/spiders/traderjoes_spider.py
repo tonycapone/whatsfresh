@@ -63,6 +63,7 @@ class TraderJoesSpider(Spider):
         links = soup.find_all("a", class_=re.compile("link4.*"))
         for link in links:
             request = Request("http://www.traderjoes.com" + link['href'])
+            request.meta['department'] = response.meta['department']
             yield request
         
     def parseLinks(self, response):
