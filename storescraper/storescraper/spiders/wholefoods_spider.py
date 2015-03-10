@@ -35,6 +35,7 @@ class WholeFoodsSpider(Spider):
             name2 = row.find("div", class_="views-field views-field-field-flyer-product-name").get_text()
             name = name1 + " " + name2
             print name
+            unit = ""
             priceDiv = row.find("div", class_="sale_line")
             if priceDiv.find("span", class_="my_price") is not None:
                 price = priceDiv.find("span", class_="my_price").get_text()

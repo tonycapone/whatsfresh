@@ -19,10 +19,9 @@ class TraderJoesSpiderTest(unittest.TestCase):
 
         items = self.wholeFoodsSpider.parse(response)
         item = items[0]
-        self.assertEquals(24, len(items))
-        self.assertEquals("Hardbite Potato Chips", item['name'])
-        self.assertEquals("$2.39", item['price'])
-        self.assertEquals("ea", item['unit'])
+        self.assertEquals(28, len(items))
+        self.assertEquals("Farmer's Hen House Cage Free Large Brown Eggs", item['name'])
+        self.assertEquals("2 for $5.00", item['price'])
 
     def setupResponse(self, request, htmlPath):
         response = Response(url='http://www.test.com',
