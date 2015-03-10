@@ -15,7 +15,7 @@ class WalmartSpider(Spider):
 
     def start_requests(self):
 
-        return [Request(url="http://weeklyads.walmart.com/flyers/walmartusa-specialpub/grid_view/44609?chrome=broadsheet&locale=en-US&type=2",
+        return [Request(url="http://weeklyads.walmart.com/flyers/walmartusa-circular/grid_view/44609?chrome=broadsheet&locale=en-US&type=2",
         callback=self.parseLinks)]
 
     def parse(self, response):
