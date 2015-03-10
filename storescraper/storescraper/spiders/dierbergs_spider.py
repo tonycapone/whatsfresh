@@ -68,7 +68,7 @@ class DierbergsSpider(Spider):
         for category in categories[1:]:
             department = category.text
             depNum = category['value']
-            depUrl = "http://exposhopper.p2ionline.com/Dierbergs/sitebase/index.aspx?area=search&adgroupid=227534&categoryid=%s" % depNum
+            depUrl = "http://exposhopper.p2ionline.com/Dierbergs/sitebase/index.aspx?area=search&adgroupid=227934&categoryid=%s" % depNum
             request = Request(url=depUrl)
             request.meta['department'] = department
             request.meta['items'] = []

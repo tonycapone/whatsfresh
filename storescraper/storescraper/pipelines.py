@@ -56,3 +56,9 @@ class DuplicatesPipeline(object):
         else:
             self.names_seen.add(item['name'])
             return item
+
+class RemoveHttp(object):
+       def process_item(self, item, spider):
+           item['imgLink'] = item['imgLink'].replace("http://", "")
+
+           return item
